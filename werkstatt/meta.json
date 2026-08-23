@@ -1,0 +1,71 @@
+{
+  "opfer": "Viktor Salomon",
+  "taeterin": "Marlene Kowalczyk",
+  "codename": "WESPE",
+  "auftraggeber": "René Falkenberg",
+  "chip": "CHIP-8842",
+  "ausweis": "TC-COURIER-8842",
+  "club": "Kuriere_der_Nacht",
+  "uebergabe": "Güterhalle Tor 4",
+  "zeugen": [
+    22019,
+    30177,
+    28456
+  ],
+  "decoys": {
+    "a": [
+      "Tobias",
+      "Renner",
+      "CHIP-5177"
+    ],
+    "b": [
+      "Ivo",
+      "Baranowski",
+      "CHIP-6609"
+    ]
+  },
+  "hashes": {
+    "opfer_sha256": [
+      "131b5ec744541f6394ab27b6f72f5491c03d25d139547442943fe38391375241",
+      "b13638382a8a937c5faa04706f856c847363989c16f9ce57c6cef649ca9bb420"
+    ],
+    "club_sha256": [
+      "da35925396a8f5c51d3fac6afb146cba888e5af6bfd4affa67f537c3dbbd67ca",
+      "da35925396a8f5c51d3fac6afb146cba888e5af6bfd4affa67f537c3dbbd67ca"
+    ],
+    "code_sha256": "41f00ba454c942bebc24374d73871549ec6022c8d57bb65b071d6bcef8eabce8",
+    "taeterin_sha256": "69bf16e2406693677245affa1d81ff381648472e0f4c127529fa9dd033579e9f",
+    "ort_sha256": [
+      "852a8b058467adec84ac38363ee30c20cb9c7607ceba1443d7fdb1a788d39306",
+      "b77101d7ba01921f462ac55930760b218ca390d832c381ef429a0524b8260483",
+      "d44f82f61f2790f63404e2256f2d5a0a0446a913fdadb98ff076446720fbd231",
+      "deaced20094055d4ac64167b9ec2b157fb44e942cfadd245101ccef4081a12bb"
+    ],
+    "taeterin_md5": "6cd023875be7c7f5a2adff4187f67c41"
+  },
+  "counts": {
+    "personen": 6498,
+    "kurier_club_size": 49,
+    "interviews": 453,
+    "strassen": 36
+  },
+  "git": {
+    "C_TEAM": "b1e6974e19e995e8a093c7900f5969b23671caf5",
+    "C_ROUTE7": "787e2213adfa1a6dfb88d0baea73cd5aa723f16e",
+    "DANGLING": "74602f360fa15fcef124355c55f7590c95b6d290"
+  },
+  "verify": {
+    "note_rot13_b64_sha256": "ed5669fb2553a1e47a34335712520c905f14960c056810e2ab59b1c5bc3efd81",
+    "mail_contains": "r.falkenberg",
+    "route7_contains": "PAKET-OBSIDIAN",
+    "wespe_txt_contains": "TC-COURIER-8842",
+    "dangling_contains": "Gueterhalle",
+    "camera_line": "2026-03-14 02:12:41 | KAM-11",
+    "gate_k": "2026-03-14 02:23:45 | GRUENPLATZ | AUSGANG | CHIP-8842",
+    "gate_b": "2026-03-14 02:36:12 | GRUENPLATZ | AUSGANG | CHIP-6609",
+    "gate_r": "2026-03-14 02:44:02 | NORDHAFEN | AUSGANG | CHIP-5177",
+    "alibi_a": "02:01:37",
+    "alibi_b1": "02:10:55",
+    "alibi_b2": "02:22:40"
+  }
+}
