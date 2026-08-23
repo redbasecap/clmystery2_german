@@ -32,7 +32,7 @@ cut -d'|' -f2               Spalten schneiden (Trenner '|')
 tr 'a-z' 'A-Z'             Zeichen ersetzen
 rev                         Zeile rückwärts
 
-KODIERUNG / VERSCHLUESSELUNG
+KODIERUNG / VERSCHLÜSSELUNG
 ----------------------------
 openssl base64 -in datei        Base64 kodieren (portabel)
 openssl base64 -d -in datei     Base64 dekodieren (portabel)

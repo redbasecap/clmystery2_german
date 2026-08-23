@@ -422,7 +422,7 @@ def build_verschluesselt():
         "Von: r.falkenberg@tccb-terminalcity.example\n"
         "An: W.\n"
         "Betreff: Termin\n\n"
-        "Der Schluessel muss bis Donnerstag funktionieren. Restzahlung nach\n"
+        "Der Schlüssel muss bis Donnerstag funktionieren. Restzahlung nach\n"
         "Testlauf, wie besprochen. Danach verbrennen. - RF\n")
     src = d / "_mail_plain.tmp"
     src.write_text(mail_plain, encoding="utf-8")
@@ -555,7 +555,7 @@ def build_git_repo():
     os.chmod(starter, 0o755)
     return {"C_TEAM": C_TEAM, "C_ROUTE7": C_ROUTE7, "DANGLING": DANGLING}
 
-TATORT_TEXT = """AKTE 47/II — DER SCHLUESSEL VON TERMINAL CITY
+TATORT_TEXT = """AKTE 47/II — DER SCHLÜSSEL VON TERMINAL CITY
 =============================================
 
         _______________________
@@ -563,30 +563,30 @@ TATORT_TEXT = """AKTE 47/II — DER SCHLUESSEL VON TERMINAL CITY
        | | T C C B         | |     TERMINAL CITY CLEARING BANK
        | |_________________| |     FINSTERSTRASSE 17
        |____    ________  __|
-       /___/    /______/ \\/      TATNACHT: 13./14. MAERZ 2026
+       /___/    /______/ \\/      TATNACHT: 13./14. MÄRZ 2026
       ___                 ___
      /   \\_______________/   \\
      \\___/               \\___/   SERVERRAUM, ERDGESCHOSS
 
-LAGEBERGICHTE
+LAGEBERICHT
 -------------
-Am Morgen des 14. Maerz 2026 wurde DR. VIKTOR SALOMON (54), leitender
+Am Morgen des 14. März 2026 wurde DR. VIKTOR SALOMON (54), leitender
 Systemarchitekt der Bank, tot im Serverraum aufgefunden. Keine aeusseren
 Verletzungen. Auf dem Tisch: ZWEI halbvolle Espressotassen.
 
-Aus dem Tresorraum fehlt der OBSIDIAN-SCHLUESSEL — ein Hardware-
-Schluessel, mit dem sich das gesamte Kreditbuch der Stadt manipulieren
+Aus dem Tresorraum fehlt der OBSIDIAN-SCHLÜSSEL — ein Hardware-
+Schlüssel, mit dem sich das gesamte Kreditbuch der Stadt manipulieren
 laesst. Wer ihn hat, kann Terminal City erpressen.
 
-Keine Spuren von Einbruch. Die Tuer war mit einem echten Schluessel
+Keine Spuren von Einbruch. Die Tür war mit einem echten Schlüssel
 geoeffnet worden. Der Hinterhofausgang in der GIESSERGASSE 3 war
 nicht verriegelt.
 
 Beweisstuecke
 -------------
-* Am Hinterhofzaun hing eine zusammengeknüllte Notiz (verschlusselt!):
+* Am Hinterhofzaun hing eine zusammengeknüllte Notiz (verschlüsselt!):
       fall/verschluesselt/notiz-am-zaun.txt
-* Auf dem Server: ein verschluesseltes Email:
+* Auf dem Server: ein verschlüsseltes E-Mail:
       fall/verschluesselt/auftraggeber.eml.aes
 * Im Zuge der Ermittlungen wurde der Tourenserver des Kurierdiensts
   'Nachtschicht-Logistik' beschlagnahmt. Abbild unter:
@@ -596,12 +596,12 @@ Beweisstuecke
 
 Zeugen (Videoaussagen, Nummern beachten!)
 -----------------------------------------
-AUSSAGE #%(z0)s — %(z0v)s %(z0n)s, Nachtwachter:
+AUSSAGE #%(z0)s — %(z0v)s %(z0n)s, Nachtwächter:
    sah gegen 02:12 eine Person mit hellem REGENMANTEL und dunklem
    FAHRRADHELM vom Bankhof Richtung Norden (U-BAHN GRUENPLATZ) davonlaufen.
    Details: fall/befragungen/befragung-%(z0)s
 
-AUSSAGE #%(z1)s — %(z1v)s %(z1n)s, Backerin:
+AUSSAGE #%(z1)s — %(z1v)s %(z1n)s, Bäckerin:
    horchte gegen 02:04 Stimmen im Bankhof; sah eine Person mit
    Rucksack, Aufschrift 'NACHTSCHICHT'.
    Details: fall/befragungen/befragung-%(z1)s
@@ -612,7 +612,7 @@ AUSSAGE #%(z2)s — %(z2v)s %(z2n)s, Taxifahrer:
    Details: fall/befragungen/befragung-%(z2)s
 
 Das TCPD braucht deinen Bericht: WER steckt dahinter — und wer hat
-bestellt? Prufe deine Zwischenergebnisse jederzeit mit ./pruefer.sh
+bestellt? Prüfe deine Zwischenergebnisse jederzeit mit ./pruefer.sh
 """
 
 ANLEITUNG = """ANLEITUNG — DIE KOMMANDOZEILEN-MORDE II
@@ -779,7 +779,7 @@ cut -d'|' -f2               Spalten schneiden (Trenner '|')
 tr 'a-z' 'A-Z'             Zeichen ersetzen
 rev                         Zeile rückwärts
 
-KODIERUNG / VERSCHLUESSELUNG
+KODIERUNG / VERSCHLÜSSELUNG
 ----------------------------
 openssl base64 -in datei        Base64 kodieren (portabel)
 openssl base64 -d -in datei     Base64 dekodieren (portabel)
@@ -814,7 +814,7 @@ TIPPS FÜR DETEKTIVE
 * Niemals raten: Jede Behauptung braucht eine Datei+Zeile als Beleg.
 """
 
-LOESUNG = """LOESUNG — WIE MAN DEN FALL ABSCHLIESST
+LOESUNG = """LÖSUNG — WIE MAN DEN FALL ABSCHLIESST
 ======================================
 
 Wenn du sicher bist, den Namen der Person zu kennen, die den
@@ -974,7 +974,7 @@ README = """DIE KOMMANDOZEILEN-MORDE II
       | ||T ||||E ||||R ||||M ||||I ||||N ||  |
       | ||__||||__||||__||||__||||__||||__||  |
       | |/==\\||/==\\||/==\\||/==\\||/==\\||/==\\|  |
-      |  CITY  II   -   DER SCHLUESSEL        |
+      |  CITY  II   -   DER SCHLÜSSEL       |
       |______________________________________|
 
 Ein Mord in Terminal City — und diesmal führen die Spuren durch

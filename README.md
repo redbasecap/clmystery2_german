@@ -6,7 +6,7 @@ DIE KOMMANDOZEILEN-MORDE II
       | ||T ||||E ||||R ||||M ||||I ||||N ||  |
       | ||__||||__||||__||||__||||__||||__||  |
       | |/==\||/==\||/==\||/==\||/==\||/==\|  |
-      |  CITY  II   -   DER SCHLUESSEL        |
+      |  CITY  II   -   DER SCHLÜSSEL       |
       |______________________________________|
 
 Ein Mord in Terminal City — und diesmal führen die Spuren durch
