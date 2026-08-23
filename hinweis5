@@ -1,0 +1,12 @@
+HINWEIS 5
+=========
+So engst du die Kurierliste ein:
+  1) U-Bahn-AUSGANG am GRUENPLATZ zwischen 02:15 und 02:45
+     (die Flüchtende lief Richtung Norden!)
+  2) Die anonymen Chips auflösen über:
+     fall/protokolle/chip-zuordnung.csv
+     -> nur wenige Namen bleiben übrig.
+  3) Gegencheck per Mobilfunk (fall/protokolle/funkzellen.log +
+     telefonbuch.csv): War jede dieser Personen überhaupt in der Lage,
+     um 02:12 an der Gießergasse zu sein? Die Kamera bestätigt:
+     genau EINE Person mit Helm lief um 02:12:41 nach NORDEN.

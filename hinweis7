@@ -1,0 +1,7 @@
+HINWEIS 7
+=========
+Die Email-Datei ist AES-verschlüsselt (openssl, PBKDF2). Der Befehl:
+    openssl enc -d -aes-256-cbc -a -pbkdf2 -iter 10000 \
+      -in fall/verschluesselt/auftraggeber.eml.aes -pass pass:PASSWORT
+Das Passwort ist der RUFRUFNAME der Fahrerin aus Route 7 — vier
+Buchstaben, ein Insekt. Woher du den bekommst? Siehe Hinweis 8.

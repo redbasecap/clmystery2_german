@@ -1,0 +1,7 @@
+HINWEIS 3
+=========
+Die Aufschrift 'NACHTSCHICHT' ist ein Firmenname. Mitgliederlisten
+liegen in:  fall/mitgliedschaften/
+    grep -i nachtschicht fall/mitgliedschaften/* 2>/dev/null
+    ls fall/mitgliedschaften | grep -i kurier
+Die Liste 'Kuriere_der_Nacht' enthält alle Fahrerinnen und Fahrer.

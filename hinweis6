@@ -1,0 +1,6 @@
+HINWEIS 6
+=========
+Die Notiz vom Zaun ist doppelt gepackt: erst ROT13, dann BASE64.
+Zurück (portabel über openssl):
+    openssl base64 -d -in fall/verschluesselt/notiz-am-zaun.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+(Auf macOS ginge auch:  base64 -D -i fall/verschluesselt/notiz-am-zaun.txt | tr ...)

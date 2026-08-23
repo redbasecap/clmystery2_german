@@ -1,0 +1,6 @@
+HINWEIS 10
+===========
+Wenn du den Namen hast, ist der Fall gelöst:
+    echo -n 'VORNAMEN NACHNAMEN' | md5
+    grep -if <HASH> kodiert
+Wie man den Bericht abgibt, steht in 'loesung'.

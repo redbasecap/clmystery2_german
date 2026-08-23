@@ -1,0 +1,13 @@
+HINWEIS 8
+=========
+Das beschlagnahmte Repo liegt als Server-IMAGE vor. Stelle es zuerst her:
+    sh fall/repos/nachtschicht-logistik/ermittlung-starten.sh
+Dann hast du ein ECHTES Git-Repository:
+    cd fall/repos/nachtschicht-logistik
+    git log --oneline
+Gelöschte Dateien leben in alten Commits weiter:
+    git show COMMIT:pfad/zur/datei
+Und manchmal gibt es sogar VERLORENE Commits:
+    git fsck --lost-found
+    git show <SHA>
+Gesucht: 'team/wespe.txt' und 'kunden/route-7.csv'.

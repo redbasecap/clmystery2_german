@@ -1,0 +1,19 @@
+LOESUNG — WIE MAN DEN FALL ABSCHLIESST
+======================================
+
+Wenn du sicher bist, den Namen der Person zu kennen, die den
+Obsidian-Schlüssel gestohlen hat, dann prüfe ihn so (macOS):
+
+    echo -n 'Vorname Nachname' | md5
+    grep -if '<DEIN-HASH>' kodiert
+
+Auf Linux heißt es 'md5sum' statt 'md5'. Wenn 'grep' den Hash in
+der Datei 'kodiert' findet: Herzlichen Glückwunsch, Detektiv.
+
+Danach wartet das versiegelte EPILOG auf dich (Passwort kennst du,
+vier Buchstaben, ein Insekt):
+
+    openssl enc -d -aes-256-cbc -a -pbkdf2 -iter 10000 \
+      -in fall/verschluesselt/epilog.aes -pass pass:PASSWORT
+
+Und mit './pruefer.sh' kannst du deinen Abschlussbericht bewerten.

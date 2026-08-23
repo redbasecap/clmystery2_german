@@ -1,0 +1,7 @@
+HINWEIS 9
+=========
+In 'team/wespe.txt' steht eine AUSWEIS-NUMMER. Die ist zugleich die
+CHIP-ID beim Verkehrsverbund:
+    grep 8842 fall/protokolle/chip-zuordnung.csv
+Damit hast du einen echten Namen. Aber Vorsicht: Erst beweisen!
+Der U-Bahn-Auszug und die Kamera müssen zur Person passen.

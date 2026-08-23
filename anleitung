@@ -1,0 +1,38 @@
+ANLEITUNG — DIE KOMMANDOZEILEN-MORDE II
+=======================================
+
+Terminal City, zwei Jahre danach: Ein Toter im Serverraum, ein
+gestohlener Schlüssel, und eine Spur, die durch Kameras, U-Bahn-
+Drehkreuze, verschlüsselte Notizen und ein beschlagnahmtes Git-
+Repository führt.
+
+REGELN
+------
+1. Benutze ausschließlich das Terminal. Keinen Texteditor und keine
+   grafischen Tools, um Dateien im Ordner 'fall/' anzusehen.
+2. Erlaubt sind: 'cat', 'less', 'head', 'tail', 'grep', 'find',
+   'sort', 'uniq', 'cut', 'tr', 'openssl', 'git', 'md5'
+   bzw. 'md5sum' und alles, was im SPICKZETTEL steht.
+3. Alles, was du brauchst, ist IM Fallordner versteckt. Du musst
+   nichts aus dem Internet laden.
+4. Steck fest? Die Dateien 'hinweis1' bis 'hinweis10' helfen — aber
+   liest sie der Reihe nach und nur, wenn du wirklich nicht weiterweißt.
+
+SO STARTEST DU
+--------------
+    cat anleitung          <- das hier
+    cat spickzettel.md     <- Kommandozeilen-Nachschlagewerk
+    ls fall/
+    less fall/tatort       <- dein erster echter Lead!
+
+WERKZEUGE
+---------
+    ./pruefer.sh           <- prüft deine Fortschritte (optional, macht Spaß)
+
+ZIEL
+----
+Finde heraus, WER den Obsidian-Schlüssel gestohlen hat, WER ihn
+beauftragt hat — und bring den Fall mit einem Einzeiler zum Abschluss
+(siehe 'loesung').
+
+Viel Erfolg, Detektiv.

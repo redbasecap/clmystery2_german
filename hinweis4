@@ -1,0 +1,7 @@
+HINWEIS 4
+=========
+Zeitfenster der Tat: ca. 01:55 bis 02:30 Uhr.
+Wer fuhr wann wohin?
+    ls fall/protokolle/
+Jede Datei erklärt ihr eigenes Format in '#' Kommentarzeilen oben.
+Filtere z.B.:  grep '02:1' fall/protokolle/kameras-giessergasse.log
