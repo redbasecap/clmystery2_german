@@ -7,15 +7,14 @@ HASHER="$(command -v shasum || true)"
 SHA256() { if [ -n "$HASHER" ]; then "$HASHER" -a 256; else sha256sum; fi; }
 
 norm() {
-  local s="${1^^}"
+  # Portable for macOS bash 3.2 (no ${var^^}): uppercase ASCII, map umlauts, keep A-Z0-9.
+  local s
+  s="$(printf '%s' "$1" | LC_ALL=C tr 'a-z' 'A-Z')"
+  s="${s//ä/AE}"; s="${s//ö/OE}"; s="${s//ü/UE}"
   s="${s//Ä/AE}"; s="${s//Ö/OE}"; s="${s//Ü/UE}"; s="${s//ß/SS}"
-  s="${s//É/E}"; s="${s//È/E}"; s="${s//Ê/E}"; s="${s//É/E}"
-  local out="" ch i
-  for (( i=0; i<${#s}; i++ )); do
-    ch="${s:i:1}"
-    [[ "$ch" =~ [A-Z0-9] ]] && out="$out$ch"
-  done
-  printf '%s' "$out"
+  s="${s//é/E}"; s="${s//è/E}"; s="${s//ê/E}"
+  s="${s//É/E}"; s="${s//È/E}"; s="${s//Ê/E}"
+  printf '%s' "$s" | LC_ALL=C tr -cd 'A-Z0-9'
 }
 
 ask() {
@@ -62,7 +61,7 @@ echo
 ask 1 "Wie lautete der vollständige Name des Opfers?" "131b5ec744541f6394ab27b6f72f5491c03d25d139547442943fe38391375241,b13638382a8a937c5faa04706f856c847363989c16f9ce57c6cef649ca9bb420" 20
 ask 2 "Welcher Club lieferte die entscheidende erste Spur? (Name wie im Verzeichnis)" "da35925396a8f5c51d3fac6afb146cba888e5af6bfd4affa67f537c3dbbd67ca,da35925396a8f5c51d3fac6afb146cba888e5af6bfd4affa67f537c3dbbd67ca" 20
 ask 3 "Welcher Codename tauchte in Route 7 als Fahrer auf?" "41f00ba454c942bebc24374d73871549ec6022c8d57bb65b071d6bcef8eabce8" 20
-ask 4 "Wie lautet der vollständige Name der Tätern/Täters?" "69bf16e2406693677245affa1d81ff381648472e0f4c127529fa9dd033579e9f" 20
+ask 4 "Wie lautet der vollständige Name der Täterin/des Täters?" "69bf16e2406693677245affa1d81ff381648472e0f4c127529fa9dd033579e9f" 20
 ask 5 "Wo und wann sollte die Übergabe stattfinden? (Ort)" "d44f82f61f2790f63404e2256f2d5a0a0446a913fdadb98ff076446720fbd231,deaced20094055d4ac64167b9ec2b157fb44e942cfadd245101ccef4081a12bb,852a8b058467adec84ac38363ee30c20cb9c7607ceba1443d7fdb1a788d39306,b77101d7ba01921f462ac55930760b218ca390d832c381ef429a0524b8260483" 20
 
 GESAMT=$(awk '{s+=$2} END{print s+0}' "$FORT" 2>/dev/null)

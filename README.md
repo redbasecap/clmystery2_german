@@ -22,7 +22,7 @@ Schnellstart
 
 Du brauchst nur ein Terminal (macOS oder Linux) mit `git`,
 `openssl` und `base64`. Keine Installation, keine Anmeldung,
-kein Internet während des Spiens.
+kein Internet während des Spielens.
 
 Für Einsteiger: `cat spickzettel.md`
 Fortschritt prüfen: `./pruefer.sh`
